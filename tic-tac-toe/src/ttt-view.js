@@ -12,12 +12,16 @@ class View {
     $ul.on('click', '.square', (e) => {
       let target = $(e.target);
       console.log(target.data('pos'));
-      debugger;
       if (this.game.board.isEmptyPos(target.data('pos'))) {
         this.makeMove(target);
         this.game.playMove(target.data('pos'));
       } else {
         alert('Invalid move');
+      }
+      
+      if (this.game.isOver()) {
+        $(this.$el).append(`<p>You win, ${this.game.winner()}!</p>`);
+        $ul.off('click', '.square');
       }
     });
   }
@@ -25,6 +29,7 @@ class View {
   makeMove($square) {
     // this.game.playMove($s.data('pos'));
     $square.text(this.game.currentPlayer);
+    $square.addClass('marker');
   }
 
   setupBoard() {

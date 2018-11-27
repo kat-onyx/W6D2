@@ -19,20 +19,14 @@
   cursor: pointer;
 }
 
-.x-marker {
+.marker {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
   font-weight: bold;
   background-color: white;
+  font-size: 94px;
 }
 
-.o-marker {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  background-color: white;
-}
 
-.hidden {
-  display: none;
-}
