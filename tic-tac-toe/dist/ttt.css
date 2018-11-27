@@ -1,0 +1,20 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 600px;
+}
+
+#square {
+  width: 150px;
+  height: 150px;
+  border: 10px solid black;
+  list-style: none;
+  padding: 15px;
+  background-color: gray;
+}
+
+#square:hover {
+  background-color: purple;
+  cursor: pointer;
+}
