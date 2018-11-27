@@ -29,4 +29,20 @@
   font-size: 94px;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 55px;
+}
+/* .ttt {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+} */
+
 
