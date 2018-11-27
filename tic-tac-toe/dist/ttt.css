@@ -5,7 +5,7 @@
   width: 600px;
 }
 
-#square {
+.square {
   width: 150px;
   height: 150px;
   border: 10px solid black;
@@ -14,7 +14,25 @@
   background-color: gray;
 }
 
-#square:hover {
+.square:hover {
   background-color: purple;
   cursor: pointer;
+}
+
+.x-marker {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: white;
+}
+
+.o-marker {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
 }
