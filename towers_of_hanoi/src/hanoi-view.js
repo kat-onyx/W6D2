@@ -3,6 +3,7 @@ class View {
     this.game = game;
     this.$el = $el;
     this.setupTowers();
+    this.clickTower();
   }
   
   setupTowers() {
@@ -24,8 +25,15 @@ class View {
       }
     }
   }
-  
-  
+  clickTower() {
+    this.$el.on('click', '.base', (e) => {
+      let $target = $(e.target);
+      console.log($target);
+    });
+  }
+  render() {
+    
+  }
 }
 
 

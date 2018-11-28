@@ -7,7 +7,7 @@
 .base {
   float: left;
   border-bottom: 5px solid black;
-  height: 100px;
+  height: 60px;
   width: 60px;
   margin: 100px;
 }
